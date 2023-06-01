@@ -10,4 +10,26 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+
+    public function datatable(){
+
+        // dd('test');
+
+    }
+
+    public function linklib(){
+
+    }
+
+    public function jscustom(){
+
+    }
+
+    public function csscustom(){
+
+    }
+
+
+
 }
