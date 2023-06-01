@@ -14,8 +14,29 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <!-- JQVMap -->
+
+
   {{-- <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/jqvmap/jqvmap.min.css')}}"> --}}
   <!-- Theme style -->
+
+
+   <!-- DataTables -->
+   {{-- <link rel='stylesheet' href='{{asset('assets/templateLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}'> --}}
+   {{-- <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}"> --}}
+   {{-- <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}"> --}}
+  
+   @php
+       $css = isset($css) ? $css : '';
+        echo $css;
+   @endphp
+
+
+
+
+
+
+
+
   <link rel="stylesheet" href="{{asset('assets/templateLTE/dist/css/adminlte.min.css')}}">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
@@ -23,3 +44,5 @@
   {{-- <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/daterangepicker/daterangepicker.css')}}"> --}}
   <!-- summernote -->
   {{-- <link rel="stylesheet" href="{{asset('assets/templateLTE/plugins/summernote/summernote-bs4.min.css')}}"> --}}
+
+  <link rel="stylesheet" href="{{asset('assets/templateLTE/css/main.css')}}">

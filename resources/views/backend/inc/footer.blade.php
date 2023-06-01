@@ -39,13 +39,62 @@
 {{-- <script src="{{asset('assets/templateLTE/plugins/daterangepicker/daterangepicker.js')}}"></script> --}}
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="{{asset('assets/templateLTE/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+
+
+<!-- DataTables  & Plugins -->
+{{-- <script src="{{asset('assets/templateLTE/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-buttons/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-buttons/js/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/jszip/jszip.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/pdfmake/pdfmake.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/pdfmake/vfs_fonts.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Summernote -->
 {{-- <script src="{{asset('assets/templateLTE/plugins/summernote/summernote-bs4.min.js')}}"></script> --}}
 <!-- overlayScrollbars -->
 <script src="{{asset('assets/templateLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+
+<!-- jquery-validation -->
+<script src="{{asset('assets/templateLTE/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{asset('assets/templateLTE/plugins/jquery-validation/additional-methods.min.js')}}"></script>
+
+
+
 <!-- AdminLTE App -->
 <script src="{{asset('assets/templateLTE/dist/js/adminlte.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 {{-- <script src="dist/js/demo.js"></script> --}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('assets/templateLTE/dist/js/pages/dashboard.js')}}"></script>
+
+
+
+{{-- js custom --}}
+{{-- <script src="{{asset('assets/templateLTE/js/m_user.js')}}"></script> --}}
+
+
+{{-- <script src="{{$js_custom}}"></script> --}}
+
+@php
+$js_custom = isset($js_custom) ? $js_custom : '';
+ echo $js_custom;
+@endphp
